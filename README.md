@@ -6,7 +6,7 @@ Currently uses the structure of tokens from devise_token_auth, replacing the tok
 Uses AsyncStorage.
 
 # Installation
-`npm install nabi` or `yarn add nabi`
+`npm install nabi-requests` or `yarn add nabi-requests`
 
 # Usage
 ```node.js
