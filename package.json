@@ -1,0 +1,31 @@
+{
+  "name": "nabi",
+  "version": "1.0.0",
+  "description": "A wrapper around axios that automatically stores and uses authentication tokens in each request",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kamenomagic/nabi.git"
+  },
+  "keywords": [
+    "axios",
+    "devise_token_auth",
+    "authentication",
+    "token",
+    "requests",
+    "server",
+    "react-native"
+  ],
+  "author": "S. Jacob Powell",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kamenomagic/nabi/issues"
+  },
+  "homepage": "https://github.com/kamenomagic/nabi#readme",
+  "dependencies": {
+    "axios": "^0.20.0"
+  }
+}
