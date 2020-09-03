@@ -10,7 +10,7 @@ Uses AsyncStorage.
 
 # Usage
 ```node.js
-import {urlFromPath, httpPost} from "nabi";
+import {urlFromPath, httpPost} from "nabi-requests";
 
 rootUrl = 'localhost:3000'
 storageKey = 'token_headers'

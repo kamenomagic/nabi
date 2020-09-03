@@ -1,7 +1,5 @@
 import axios from "axios";
 import { AsyncStorage } from "react-native";
-import getEnvVars from "../environment";
-const { rootUrl } = getEnvVars();
 
 exports.rootUrl = 'localhost:3000'
 exports.storageKey = 'token_headers'
