@@ -1,4 +1,4 @@
-# Nabi
+# Nabi Requests
 A wrapper around axios that automatically stores and uses authentication tokens in each request
 
 # Current assumptions
@@ -12,8 +12,8 @@ Uses AsyncStorage.
 ```node.js
 import {urlFromPath, httpPost} from "nabi-requests";
 
-rootUrl = 'localhost:3000'
-storageKey = 'token_headers'
+setRootUrl('localhost:3000')
+setStorageKey('token_headers')
 
 httpPost((response) => {
     // Do some awesome react state and screen stuff
