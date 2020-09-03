@@ -4,8 +4,15 @@ import { AsyncStorage } from "react-native";
 var rootUrl  = 'localhost:3000'
 exports.rootUrl = rootUrl
 
+var storageKey  = 'token_headers'
+exports.storageKey = storageKey
+
 exports.setRootUrl = (newRootUrl) => {
   rootUrl = newRootUrl
+}
+
+exports.setStorageKey = (newStorageKey) => {
+  storageKey = newStorageKey 
 }
 
 const extractTokenHeaders = (headers) => {
