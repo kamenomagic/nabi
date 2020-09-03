@@ -1,7 +1,7 @@
 import axios from "axios";
 import { AsyncStorage } from "react-native";
 
-var rootUrl  = 'localhost:3000'
+var rootUrl  = 'http://localhost:3000'
 exports.rootUrl = rootUrl
 
 var storageKey  = 'token_headers'
@@ -32,9 +32,11 @@ const extractTokenHeaders = (headers) => {
 };
 
 const saveHeaders = (response) => {
-  const headers = JSON.stringify(extractTokenHeaders(response.headers));
-  if (JSON.parse(headers)["access-token"] !== "") {
-    AsyncStorage.setItem(storageKey, headers);
+  const headers = extractTokenHeaders(response.headers)
+  if ("access-token" in headers &&
+    headers["access-token"] !== "" &&
+    headers["access-token"] !== undefined) {
+    AsyncStorage.setItem(storageKey, JSON.stringify(headers));
   }
   return response;
 };

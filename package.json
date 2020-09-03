@@ -1,6 +1,6 @@
 {
   "name": "nabi-requests",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "A wrapper around axios that automatically stores and uses authentication tokens in each request",
   "main": "index.js",
   "scripts": {
