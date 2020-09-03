@@ -1,8 +1,12 @@
 import axios from "axios";
 import { AsyncStorage } from "react-native";
 
-exports.rootUrl = 'localhost:3000'
-exports.storageKey = 'token_headers'
+var rootUrl  = 'localhost:3000'
+exports.rootUrl = rootUrl
+
+exports.setRootUrl = (newRootUrl) => {
+  rootUrl = newRootUrl
+}
 
 const extractTokenHeaders = (headers) => {
   return (({
